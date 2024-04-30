@@ -1,9 +1,11 @@
-import Image from "next/image";
+import NavLink from "../components/NavBar/index";
 
 export default function Home() {
   return (
     <main>
-      Main Page
+      <NavLink href="/teste" size="lg">
+          Link teste
+      </NavLink>
     </main>
   );
 }
