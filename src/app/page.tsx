@@ -1,13 +1,10 @@
-import { NavBar } from "../components/NavBar/index";
+import Nav from "@/components/NavBar/Nav";
 
 export default function Home() {
   return (
     <main>
-      <NavBar.Root>
-        <NavBar.Link href="/teste" size="lg">
-          Link teste
-        </NavBar.Link>
-      </NavBar.Root>
+      <Nav />
+      <h1>Home</h1>
     </main>
   );
 }
