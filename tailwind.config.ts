@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      black: "#2b2b2b",
+      white: "#f8f4f0",
       creme: "#D7C6B4",
       bege: "#C2A087",
       rosa: {
