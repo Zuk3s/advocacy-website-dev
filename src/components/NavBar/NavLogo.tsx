@@ -7,5 +7,5 @@ interface NavLogoProps {
 }
 
 export function NavLogo({ src, alt }: NavLogoProps) {
-  return <Image src={src} alt={alt} objectFit="cover"></Image>;
+  return <Image src={src} alt={alt} className="sm:w-16 w-14 object-cover" />;
 }
