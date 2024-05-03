@@ -1,16 +1,17 @@
-import { NavBar } from "./index";
-import Logo from "../../../public/images/Logo.png";
+import { Nav } from "./index";
+import Logo from "../../../public/images/logo-b.png";
+import Image from "next/image";
 
-export default function Nav() {
+export default function NavBar() {
   return (
-    <NavBar.Root>
-      <NavBar.Logo src={Logo} alt="Logo" />
-      <NavBar.Group className="justify-end w-full gap-x-3">
-        <NavBar.Link href="/">Início</NavBar.Link>
-        <NavBar.Link href="/about">Sobre</NavBar.Link>
-        <NavBar.Link href="/contact">Contato</NavBar.Link>
-        <NavBar.Link href="/">Artigos</NavBar.Link>
-      </NavBar.Group>
-    </NavBar.Root>
+    <Nav.Root>
+      <Image src={Logo} alt="Logo" className="sm:w-16 w-14 object-cover" />
+      <Nav.Group className="justify-end w-full gap-x-3">
+        <Nav.Link href="/">Início</Nav.Link>
+        <Nav.Link href="/artigos">Artigos</Nav.Link>
+        <Nav.Link href="/about">Sobre</Nav.Link>
+        <Nav.Link href="/contact">Contato</Nav.Link>
+      </Nav.Group>
+    </Nav.Root>
   );
 }
