@@ -1,17 +1,12 @@
-"use client";
 import { Card } from "@/components/Card/index";
-import { useEffect, useState } from "react";
 import ArtigosType from "@/types/ArtigoType";
 
-export default function Cards() {
-  const [data, setData] = useState<ArtigosType[]>([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3080/artigos/")
-      .then((response) => response.json())
-      .then((data) => setData(data));
-  }, []);
-
+const getArtigos = async () => {
+  const data = await fetch(`${process.env.URL_API}artigos/`);
+  return await data.json();
+};
+export default async function Cards() {
+  const data: ArtigosType[] = await getArtigos();
 
   return (
     <Card.Group>
