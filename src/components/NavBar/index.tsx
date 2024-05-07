@@ -1,7 +1,7 @@
-import { NavLink } from "./NavLink";
-import { NavDropdown } from "./NavDropdown";
-import { NavRoot } from "./NavRoot";
-import { NavGroup } from "./NavGroup";
+import { NavLink } from "./components/Link";
+import { NavDropdown } from "./components/Dropdown";
+import { NavRoot } from "./components/Root";
+import { NavGroup } from "./components/Group";
 
 export const Nav = {
   Link: NavLink,
