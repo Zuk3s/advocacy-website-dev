@@ -1,9 +1,10 @@
-import { CardImg } from "./CardImg";
-import { CardRoot } from "./CardRoot";
-import { CardGroup } from "./CardGroup";
-import { CardTitle } from "./CardTitle";
-import { CardTextGroup } from "./CardTextGroup";
-import { CardContent } from "./CardContent";
+import { CardImg } from "./components/Img";
+import { CardRoot } from "./components/Root";
+import { CardGroup } from "./components/Group";
+import { CardTitle } from "./components/Title";
+import { CardTextGroup } from "./components/TextGroup";
+import { CardContent } from "./components/Content";
+import { CardFooter } from "./components/Footer";
 
 export const Card = {
   Root: CardRoot,
@@ -12,4 +13,5 @@ export const Card = {
   Group: CardGroup,
   GroupText: CardTextGroup,
   Content: CardContent,
+  Footer: CardFooter,
 };
