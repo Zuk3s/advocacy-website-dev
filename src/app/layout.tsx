@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import Nav from "@/components/NavBar/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={twMerge(inter.className, "bg-white")}>{children}</body>
+      <body className={twMerge(inter.className, "bg-white")}>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
