@@ -1,3 +1,22 @@
-export function Section({ children }: { children: React.ReactNode }) {
-  return <section className="max-w-7xl mx-auto p-4 py-8 md:p-8">{children}</section>;
+import { twMerge } from "tailwind-merge";
+
+export function Section({
+  children,
+  className,
+  notMargin,
+  id,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  notMargin?: boolean;
+  id?: string;
+}) {
+  return (
+    <section
+      className={twMerge("mx-auto px-5", className, !notMargin && "max-w-7xl")}
+      id={id}
+    >
+      {children}
+    </section>
+  );
 }
