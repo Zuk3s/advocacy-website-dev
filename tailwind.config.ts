@@ -1,4 +1,6 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
+//import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -7,22 +9,38 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      black: "#2b2b2b",
-      white: "#f8f4f0",
-      creme: "#D7C6B4",
-      bege: "#C2A087",
-      rosa: {
-        200: "#CFA7A5",
-        300: "#A17974",
-        400: "#734B46",
-        700: "#451E1A",
-        900: "#170000",
-      },
-    },
     extend: {
+      keyframes: {
+        spinwords: {
+          "0%": {
+            transform: "translateY(0%)",
+          },
+          "12.5%": {
+            transform: "translateY(-100%)",
+          },
+          "25%": {
+            transform: "translateY(-200%)",
+          },
+          "37.5%": {
+            transform: "translateY(-300%)",
+          },
+          "50%": {
+            transform: "translateY(-400%)",
+          },
+          "62.5%": {
+            transform: "translateY(-500%)",
+          },
+          "75%": {
+            transform: "translateY(-600%)",
+          },
+          "87.5%": {
+            transform: "translateY(-700%)",
+          },
+          "100%": {
+            transform: "translateY(-800%)",
+          },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
