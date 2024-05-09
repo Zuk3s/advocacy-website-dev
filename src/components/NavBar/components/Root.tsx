@@ -8,14 +8,14 @@ interface NavRootProps {
 
 export function NavRoot({ children, ...rest }: NavRootProps) {
   return (
-    <header
+    <section
       {...rest}
       className={twMerge(
-        "bg-rosa-400 w-full py-4 sm:px-16 px-4 shadow-lg flex row-span-3 items-center content-stretch",
+        "w-full py-6 px-4",
         rest.className
       )}
     >
       {children}
-    </header>
+    </section>
   );
 }
