@@ -14,7 +14,7 @@ export default async function Cards() {
         <Card.Root key={item._id} href={`/artigos/${item._id}`}>
           <Card.Img src={item.imagem} />
           <Card.GroupText>
-            <Card.Title as="h1">{item.conteudo}</Card.Title>
+            <Card.Title as="h1">{item.titulo}</Card.Title>
             <Card.Content>{item.conteudo}</Card.Content>
             <Card.Footer>
               {new Date(item.data_criacao).toLocaleDateString()}

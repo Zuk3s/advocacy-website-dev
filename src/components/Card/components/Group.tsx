@@ -10,7 +10,7 @@ export function CardGroup({ children, className }: CardGroupProps) {
   return (
     <section
       className={twMerge(
-        "flex flex-wrap flex-col md:flex-row gap-6",
+        "flex flex-wrap flex-col md:flex-row gap-5",
         className
       )}
     >
