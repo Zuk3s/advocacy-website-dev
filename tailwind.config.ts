@@ -13,31 +13,28 @@ const config: Config = {
       keyframes: {
         spinwords: {
           "0%": {
-            transform: "translateY(0%)",
+            transform: "translateY(90%)",
           },
-          "12.5%": {
+          "10%": {
+            transform: "translateY(-10%)",
+          },
+          "35%": {
+            transform: "translateY(-0%)",
+          },
+          "45%": {
+            transform: "translateY(-110%)",
+          },
+          "65%": {
             transform: "translateY(-100%)",
           },
-          "25%": {
+          "75%": {
+            transform: "translateY(-210%)",
+          },
+          "95%": {
             transform: "translateY(-200%)",
           },
-          "37.5%": {
-            transform: "translateY(-300%)",
-          },
-          "50%": {
-            transform: "translateY(-400%)",
-          },
-          "62.5%": {
-            transform: "translateY(-500%)",
-          },
-          "75%": {
-            transform: "translateY(-600%)",
-          },
-          "87.5%": {
-            transform: "translateY(-700%)",
-          },
           "100%": {
-            transform: "translateY(-800%)",
+            transform: "translateY(-280%)",
           },
         },
       },
