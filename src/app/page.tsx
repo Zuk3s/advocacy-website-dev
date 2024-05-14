@@ -1,8 +1,8 @@
 import { ImageSection } from "@/components/Content/ImageSection";
-import ScrollButton from "@/components/Content/ScrollButton";
 import { Section } from "@/components/Content/Section";
 import Title from "@/components/Content/Title";
 import Image from "next/image";
+import Icon from "@/components/Buttons/components/Icon";
 
 export default function Home() {
   const CardsAtuação = [
@@ -23,7 +23,13 @@ export default function Home() {
     <>
       <ImageSection />
       <Section className="h-[20vh] flex justify-center items-center">
-        <ScrollButton href="#atuações" />
+        <Icon href="#atuações" svg="stroke-white motion-safe:animate-bounce">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
+        </Icon>
       </Section>
       <Section id="atuações" className="mt-[20vh] min-h-[80vh]" notMargin>
         <Title>Áreas de atuação</Title>
