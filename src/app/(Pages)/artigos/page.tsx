@@ -1,7 +1,5 @@
-import { Card } from "@/components/Card/index";
-import Title from "@/components/Content/Title";
-import Cards from "@/components/Card/Card";
 import { Metadata } from "next";
+import CardTest from "@/components/Content/Card";
 
 export const metadata: Metadata = {
   title: "Artigos",
@@ -11,10 +9,7 @@ export const metadata: Metadata = {
 export default function Artigos() {
   return (
     <>
-      <Title>Artigos</Title>
-      <Card.Group>
-        <Cards />
-      </Card.Group>
+      <CardTest />
     </>
   );
 }
