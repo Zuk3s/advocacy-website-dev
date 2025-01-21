@@ -1,7 +1,7 @@
 import { Section } from "@/components/Content/Section";
 import Icon from "@/components/Buttons/components/Icon";
 
-export default function () {
+export default function DropButton() {
   return (
     <Section className="h-[20vh] flex justify-center items-center">
       <Icon
