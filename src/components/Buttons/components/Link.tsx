@@ -13,8 +13,6 @@ export default function link({
   return (
     <Link
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
       className={twMerge(
         "bg-slate-900 hover:bg-slate-800 text-zinc-50 rounded-lg px-8 py-4",
         className
