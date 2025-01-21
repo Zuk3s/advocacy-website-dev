@@ -5,14 +5,12 @@ export default function Icon({
   children,
   className,
   href,
-  svg,
   text,
-  isBlank = false
+  isBlank = false,
 }: {
   children: React.ReactNode;
   className?: string;
   href: string;
-  svg?: string;
   text?: string;
   isBlank?: boolean;
 }) {
@@ -30,7 +28,7 @@ export default function Icon({
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        className={twMerge("w-6 h-6", svg)}
+        className={"w-8 h-8 fill-white stroke-0"}
       >
         {children}
       </svg>

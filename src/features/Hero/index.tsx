@@ -15,7 +15,7 @@ export default function Hero() {
       className="w-full h-[80vh] bg-cover shadow-2xl bg-fixed"
       style={{
         backgroundImage: "url('/images/backgroundHome.jpg')",
-        backgroundPosition: "center",
+        backgroundPosition: "end",
       }}
     >
       <Nav />
@@ -35,7 +35,7 @@ export default function Hero() {
         </h1>
         <div className="flex flex-col-reverse md:flex-row items-center place-items-stretch flex-wrap w-full mt-auto md:mt-14 gap-6">
           <Button.Link
-            href=""
+            href="#contat"
             className="h-16 items-center justify-center flex w-full md:w-fit"
           >
             Entre em contato
@@ -43,7 +43,6 @@ export default function Hero() {
           <Button.Icon
             href="https://www.instagram.com/daleterocha.adv/"
             className="w-full h-16 rounded-lg md:rounded-full md:w-fit flex justify-center items-center"
-            svg="w-8 h-8 fill-white stroke-0"
             text="Instagram"
             isBlank
           >
@@ -52,7 +51,6 @@ export default function Hero() {
           <Button.Icon
             href="https://wa.me/5561999361491?text=Olá%20gostaria%20de%20mais%20informações!"
             className="w-full h-16 rounded-lg md:rounded-full md:w-fit flex justify-center items-center"
-            svg="w-8 h-8 fill-white stroke-0"
             text="Whatszapp"
             isBlank
           >
