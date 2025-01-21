@@ -7,16 +7,20 @@ export default function Icon({
   href,
   svg,
   text,
+  isBlank = false
 }: {
   children: React.ReactNode;
   className?: string;
   href: string;
   svg?: string;
   text?: string;
+  isBlank?: boolean;
 }) {
   return (
     <Link
       href={href}
+      target={isBlank ? "_blank" : "_self"}
+      rel="noopener noreferrer"
       className={twMerge(
         "p-4 bg-slate-900 hover:bg-slate-800 rounded-full space-x-2",
         className

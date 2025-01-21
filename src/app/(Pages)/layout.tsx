@@ -1,5 +1,5 @@
 import { Section } from "@/components/Content/Section";
-import Nav from "@/components/NavBar/Nav";
+import Nav from "@/features/NavBar/Nav";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
