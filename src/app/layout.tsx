@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Advogada Dálete",
-  description: "Teste",
+  description: `Bem-vindo(a)! Somos um escritório de advocacia comprometido em oferecer soluções jurídicas personalizadas e eficazes para atender às suas necessidades. 
+  Nosso objetivo é não apenas conquistar sua confiança, mas construir uma parceria sólida e duradoura, baseada em respeito e comprometimento.`,
 };
 
 export default function RootLayout({
