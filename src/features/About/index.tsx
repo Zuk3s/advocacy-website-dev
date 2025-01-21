@@ -2,7 +2,7 @@ import { Section } from "@/components/Content/Section";
 import Title from "@/components/Content/Title";
 import Image from "next/image";
 
-export default function () {
+export default function About() {
   return (
     <section
       id="about"

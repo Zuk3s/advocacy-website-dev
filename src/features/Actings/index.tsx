@@ -2,7 +2,7 @@ import { Section } from "@/components/Content/Section";
 import Image from "next/image";
 import Title from "@/components/Content/Title";
 
-export default function () {
+export default function Actings() {
   const CardsAtuação = [
     {
       title: "Divórcio",

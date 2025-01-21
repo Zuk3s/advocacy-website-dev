@@ -2,7 +2,7 @@ import Nav from "@/features/NavBar/Nav";
 import { Section } from "../../components/Content/Section";
 import { Button } from "../../components/Buttons";
 
-export default function () {
+export default function Hero() {
   const text = [
     { title: "Demandas Familiaristas" },
     { title: "Divórcio" },

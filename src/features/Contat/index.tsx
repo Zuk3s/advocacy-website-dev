@@ -1,7 +1,7 @@
 import { Section } from "@/components/Content/Section";
 import Title from "@/components/Content/Title";
 
-export default function () {
+export default function Contat() {
   return (
     <Section id="contat" className="py-16">
       <Title>Contato</Title>
