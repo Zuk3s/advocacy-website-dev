@@ -1,6 +1,7 @@
 import { Section } from "@/components/Content/Section";
 import Title from "@/components/Content/Title";
 import Image from "next/image";
+import SelfImage from "../../../public/self.jpg";
 
 export default function About() {
   return (
@@ -17,14 +18,14 @@ export default function About() {
         <div className="flex flex-col lg:flex-row gap-3 flex-1 w-full justify-center items-stretch mt-14">
           <div className="w-full lg:w-2/5 mx-auto">
             <Image
-              src={"/images/IMG_6261.JPG"}
+              src={SelfImage}
               alt="Imagem Advogada"
               className="object-cover w-full h-full max-h-[40vh] sm:max-h-[65vh] lg:max-h-full bg-center rounded-t-lg lg:rounded-none lg:rounded-l-lg"
               width={1000}
               height={1000}
             />
           </div>
-          <div className="w-full lg:w-2/3 text-lg md:text-xl text-justify space-y-4 mx-auto tracking-wide bg-slate-50 p-9 rounded-b-lg lg:rounded-none lg:rounded-r-lg">
+          <div className="w-full lg:w-2/3 text-base md:text-xl text-justify space-y-4 mx-auto tracking-wide bg-slate-50 p-9 rounded-b-lg lg:rounded-none lg:rounded-r-lg">
             <p>
               O escritório Dálete Rocha Advocacia é especializado em Direito de
               Família e Sucessões, com atuação destacada na resolução de
